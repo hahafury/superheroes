@@ -2,7 +2,6 @@ const express = require('express');
 const controller = require('../controllers/superheroController.js');
 const imageUpload = require('../middleware/imageUpload')
 const router = express.Router();
-//const { upload } = require('./../middleware');
 router.post(
   '/createSuperhero',
   imageUpload.array('superheroImages[]'),
@@ -29,11 +28,5 @@ router.delete(
   '/deleteSuperhero',
   controller.deleteSuperhero
 )
-
-/*router.post(
-  '/addSuperheroImages',
-  imageUpload.array('superheroImages[]'),
-  //controller.updateSuperhero
-)*/
 
 module.exports = router;
