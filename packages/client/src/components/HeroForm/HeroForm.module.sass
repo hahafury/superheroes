@@ -1,0 +1,32 @@
+.heroFormContainer
+    justify-content: center
+    display: flex
+    flex-direction: column
+    max-width: 500px
+    margin: 0 auto
+    transition: 0.35s
+
+    .heroForm
+        display: flex
+        flex-direction: column
+        min-width: 500px
+
+        .nameWrapper
+            display: flex
+            justify-content: space-between
+
+            input
+                width: 210px
+
+    img
+        width: 150px
+        height: 125px
+        transition: 0.35s
+        
+        &:hover
+            cursor: pointer
+            transition: 0.35s
+            filter: brightness(40%)
+
+    .heroForm > *
+        margin-top: 1rem

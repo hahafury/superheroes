@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "superhero_db",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": "Op"
+  }
+}
